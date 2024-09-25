@@ -17,7 +17,9 @@ chat = model.start_chat()
 
 
 # Function to classify locations
-
+@app.route('/', methods=['GET'])
+def index():
+    return "Hello, world!"
 
 @app.route('/chat', methods=['POST'])
 def chat1():
